@@ -1,0 +1,31 @@
+html {
+    background-color: rgb(68, 72, 76);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'FerroRosso', cursive;
+    font-size: 70px;
+    color: rgb(255, 40, 0);
+    font-style: italic;
+}
+
+.logo {
+    width: 75px;
+    display: block;
+    margin:30px auto 0px auto;
+}
+
+#lorem {
+    color: whitesmoke;
+    text-align:  center;
+    margin: 0px 300px 0 300px;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: FerroRosso;
+    src: url(fonts/FerroRosso.ttf);
+}
+
