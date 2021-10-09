@@ -17,11 +17,12 @@ h1 {
     margin:30px auto 0px auto;
 }
 
-#lorem {
+p {
     color: whitesmoke;
     text-align:  center;
     margin: 0px 300px 0 300px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 
 @font-face {
@@ -29,3 +30,10 @@ h1 {
     src: url(fonts/FerroRosso.ttf);
 }
 
+h2 {
+    color:red;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+}
