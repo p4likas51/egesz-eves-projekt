@@ -17,10 +17,10 @@ h1 {
     margin:30px auto 0px auto;
 }
 
-p {
+.lorem {
     color: whitesmoke;
-    text-align:  center;
-    margin: 0px 300px 0 300px;
+    text-align: center;
+    margin: 0 300px;
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
 }
@@ -30,10 +30,51 @@ p {
     src: url(fonts/FerroRosso.ttf);
 }
 
-h2 {
-    color:red;
-    font-family: 'Oswald', sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 50px;
+.ui{
+    margin:0 auto;
+    padding: 20px;
+    width: 60%;
+    height: 300px;
+    border: solid 5px rgb(255, 40, 0);
+    border-radius: 20px
 }
+
+.table{
+    
+    background-color:rgb(68, 72, 76);
+}
+.table_h1{
+    text-align: center;
+    color: whitesmoke;
+}
+.drivers{
+    overflow: hidden;
+    background-color: yellow;
+}
+.history{
+    overflow: hidden;
+    background-color: tomato;
+}
+.car{
+    overflow: hidden;
+    background-color: blue;
+}
+.float{
+    float: left;
+    margin: 5px;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    border-radius: 25px;    
+}
+.img_drivers{
+    width: 100%;
+}
+.img_history{
+    width: 100%;
+}
+.img_car{
+    width: 100%;
+}
+
+
+
