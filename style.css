@@ -1,80 +1,85 @@
 html {
     background-color: rgb(68, 72, 76);
+    position: relative;
 }
 
 h1 {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0;
     font-family: 'FerroRosso', cursive;
     font-size: 70px;
     color: rgb(255, 40, 0);
     font-style: italic;
 }
-
-.logo {
-    width: 75px;
-    display: block;
-    margin:30px auto 0px auto;
+.menu{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    border: solid rgb(255, 40, 0) 6px;
+    border-radius: 30px;
+    
+}
+.menu span{
+    margin: 20px 50px 20px 50px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+}
+.logo_img {
+    width: 125px;
+    margin: 20px 30px 20px 30px;
+}
+.items_hover{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: 1s;
+    padding: 17.5px 0 17.5px 0;
+    border-radius: 30px;
+    transition-property: background-color;
+    overflow: hidden;
 }
 
-.lorem {
+.items_hover:hover{
+    background-color: grey;
+    border-radius: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0;
+    line-height: 109px;
+    height: 109px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* .lorem {
     color: whitesmoke;
     text-align: center;
-    margin: 0 300px;
+    margin: 20px auto;
+    width: 50%;
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
-}
+} */
+
 
 @font-face {
     font-family: FerroRosso;
     src: url(fonts/FerroRosso.ttf);
 }
-
-.ui{
-    margin:0 auto;
-    padding: 20px;
-    width: 60%;
-    height: 300px;
-    border: solid 5px rgb(255, 40, 0);
-    border-radius: 20px
-}
-
-.table{
-    
-    background-color:rgb(68, 72, 76);
-}
-.table_h1{
-    text-align: center;
-    color: whitesmoke;
-}
-.drivers{
-    overflow: hidden;
-    background-color: yellow;
+.items_hover a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 .history{
-    overflow: hidden;
-    background-color: tomato;
+    margin-top: 30px;
 }
-.car{
-    overflow: hidden;
-    background-color: blue;
-}
-.float{
-    float: left;
-    margin: 5px;
-    width: calc(50% - 10px);
-    height: calc(50% - 10px);
-    border-radius: 25px;    
-}
-.img_drivers{
-    width: 100%;
-}
-.img_history{
-    width: 100%;
-}
-.img_car{
-    width: 100%;
-}
-
 
 
