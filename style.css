@@ -1,8 +1,9 @@
-html {
+body{
     background-color: rgb(68, 72, 76);
     position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
-
 h1 {
     text-align: center;
     margin: 10px 0;
@@ -15,8 +16,6 @@ h1 {
 /* index.html css */
 
 .menu{
-    width: 70%;
-    margin: 0 auto;
     display: flex;
     position: relative;
     justify-content: space-evenly;
@@ -41,7 +40,7 @@ h1 {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    transition: 1s;
+    transition: .3s;
     padding: 17.5px 0 17.5px 0;
     border-radius: 30px;
     transition-property: background-color;
@@ -85,6 +84,54 @@ h1 {
 .history{
     margin-top: 30px;
 }
+table{
+    border: rgb(255, 40, 0) solid 3px;
+    margin: 20px auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+td{
+    text-align: center;
+    padding: 15px;
+}
+.table_left{
+    text-align: left;
+}
+.rb{
+    color: rgb(0, 11, 141);
+    font-size: 35px;
+}
+.merc{
+    color: #03BFB5;
+    font-size: 35px;
+}
+.ferrari{
+    color: rgb(255, 40, 0);
+    font-size: 35px;
+}
+.mclaren{
+    color: #FF9700;
+    font-size: 35px;
+}
+.williams{
+    color: #005AFF;
+    font-size: 35px;
+}
+.gold{
+    background-color: rgba(255, 217, 0, 0.774);
+    padding: 7px 30px;
+}
+.silver{
+    background-color: silver;
+    padding: 7px 30px;
+}
+.bronz{
+    background-color: rgb(176, 141, 87);
+    padding: 7px 30px;
+    
+}
 
 /* gallery.html css */
 
@@ -92,7 +139,7 @@ h1 {
     margin-top: 30px;
 }
 .gallery{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
