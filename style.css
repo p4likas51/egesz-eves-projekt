@@ -1,9 +1,15 @@
 body{
     background-color: rgb(68, 72, 76);
+    
+}
+
+.container{
+    
     position: relative;
     width: 70%;
     margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     margin: 10px 0;
@@ -22,18 +28,21 @@ h1 {
     border: solid rgb(255, 40, 0) 6px;
     border-radius: 30px;
     flex-wrap: wrap;
-    
+    margin: 0 20px;
 }
+
 .menu span{
-    margin: 20px 50px 20px 50px;
-    font-size: 50px;
+    margin: 20px 30px;
+    font-size: 35px;
     font-family: 'Oswald', sans-serif;
     color: whitesmoke;
 }
+
 .logo_img {
-    width: 125px;
+    width: 100px;
     margin: 20px 30px 20px 30px;
 }
+
 .items_hover{
     position: relative;
     top: 50%;
@@ -48,85 +57,100 @@ h1 {
 }
 
 .items_hover:hover{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
     border-radius: 30px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0;
-    line-height: 109px;
-    height: 109px;
+    line-height: 87px;
+    height: 87px;
     width: 100%;
     overflow: hidden;
 }
 
-/* .lorem {
+.history_text {
     color: whitesmoke;
     text-align: center;
     margin: 20px auto;
-    width: 50%;
+    width: 60%;
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
-} */
+} 
 
 
 @font-face {
     font-family: FerroRosso;
     src: url(fonts/FerroRosso.ttf);
 }
+
 .items_hover a{
     text-decoration: none;
     display: block;
     height: 100%;
     width: 100%;
 }
+
+/* histroy.html css */
+
 .history{
     margin-top: 30px;
 }
+
 table{
     border: rgb(255, 40, 0) solid 3px;
+    border-radius: 30px;
     margin: 20px auto;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     color: whitesmoke;
-    border-radius: 30px;
 }
+
 td{
     text-align: center;
     padding: 15px;
 }
+
 .table_left{
     text-align: left;
 }
+
 .rb{
     color: rgb(0, 11, 141);
     font-size: 35px;
 }
+
 .merc{
     color: #03BFB5;
     font-size: 35px;
 }
+
 .ferrari{
     color: rgb(255, 40, 0);
     font-size: 35px;
 }
+
 .mclaren{
     color: #FF9700;
     font-size: 35px;
 }
+
 .williams{
     color: #005AFF;
     font-size: 35px;
 }
+
 .gold{
     background-color: rgba(255, 217, 0, 0.774);
     padding: 7px 30px;
 }
+
 .silver{
     background-color: silver;
     padding: 7px 30px;
 }
+
 .bronz{
     background-color: rgb(176, 141, 87);
     padding: 7px 30px;
@@ -138,6 +162,7 @@ td{
 .gallery_text{
     margin-top: 30px;
 }
+
 .gallery{
     width: 100%;
     margin: 0 auto;
@@ -145,6 +170,7 @@ td{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .box_items{
     height: 200px;
     margin: 10px;
