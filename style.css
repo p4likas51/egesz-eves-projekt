@@ -13,11 +13,18 @@ body{
 
 h1 {
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
     font-family: 'FerroRosso', cursive;
     font-size: 70px;
-    color: rgb(255, 40, 0);
+    color: whitesmoke;
     font-style: italic;
+}
+h2{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Oswald', cursive;
+    font-size: 50px;
+    color: whitesmoke;
 }
 
 /* index.html css */
@@ -60,22 +67,22 @@ h1 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: .3s;
-    padding: 17.5px 0 17.5px 0;
-    border-radius: 16px;
+    padding: 10px 0;
+    border-radius: 5px;
     transition-property: background-color;
     overflow: hidden;
 }
 
 .items_hover:hover{
     background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 16px;
+    border-radius: 5px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0;
-    line-height: 87px;
-    height: 87px;
+    line-height: 72px;
+    height: 72px;
     width: 100%;
     overflow: hidden;
 }
@@ -177,7 +184,7 @@ td{
 
 .gallery_img_big{
     height: 750px;
-    
+    border-radius: 5px;
 }
 
 .gallery{
@@ -225,7 +232,7 @@ td{
 }
 
 .gallery_items:hover img {
-    -webkit-filter: brightness(40%);
+    filter: brightness(35%);
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -292,7 +299,7 @@ td{
     position: relative;
     background: rgb(26, 33, 36);
     padding: 1em;
-    border-radius: 16px;
+    border-radius: 5px;
 }
 
 .close{
@@ -315,4 +322,19 @@ td{
     text-decoration: none;
     color: whitesmoke;
     font: bold;
+}
+
+/* pilots.html */
+
+.pilots_div div{
+    width: 50%;
+    margin: 0;
+}
+
+.pilots_div div img{
+    width: 100%;
+    height: auto;
+}
+.sainz_img{
+    float: right;
 }
