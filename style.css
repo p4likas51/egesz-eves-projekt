@@ -326,15 +326,87 @@ td{
 
 /* pilots.html */
 
-.pilots_div div{
-    width: 50%;
-    margin: 0;
+.pilots_div{
+    overflow: hidden;
 }
 
-.pilots_div div img{
-    width: 100%;
-    height: auto;
+.pilots_div div{
+    width: 50%;
+    overflow: hidden;
 }
-.sainz_img{
+
+.sainz_div{
     float: right;
 }
+
+@keyframes fadeIn2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+.sainz_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Oswald';
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    display: none;
+}
+
+.leclerc_text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-family: 'Oswald';
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    display: none;
+}
+
+.pilots_div div:hover .pilots_text{
+    transition: all ease-in .3s;
+    display: block;
+    animation: fadeIn2 linear .3s;
+    -webkit-animation: fadeIn2 linear .3s;
+    -moz-animation: fadeIn2 linear .3s;
+    -o-animation: fadeIn2 linear .3s;
+    -ms-animation: fadeIn2 linear .3s;
+}
+
+.pilots_div img{
+    width: 100%;
+    display: block;
+    transition: ease-in .1s;
+}
+
+.pilots_div div:hover img{
+    transform: scale(1.15);
+    transition: ease-in .3s;
+    filter: brightness(35%);
+}
+
+
