@@ -214,7 +214,7 @@ td{
     color: rgb(185, 185, 185);
     text-decoration: none;
     display: none;
-    padding: 50px;
+    padding: 35px;
 
 }
 
@@ -265,10 +265,6 @@ td{
     100% {opacity:1;}
 }
 
-/* .gallery_desc{
-    padding: 1.5em;
-} */
-
 .gallery_title{
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
@@ -288,6 +284,18 @@ td{
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+.gallery-lightbox_title{
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+
+.gallery-lightbox_body{
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 10px 0 0 0;
 }
 
 .gallery-lightbox:target{
@@ -364,7 +372,6 @@ td{
     100% {opacity:1;}
 }
 
-
 .sainz_text{
     position: absolute;
     top: 50%;
@@ -386,6 +393,11 @@ td{
     text-align: center;
     display: none;
 }
+
+.pilots_text p{
+    margin: 0 24px;
+}
+
 
 .pilots_div div:hover .pilots_text{
     transition: all ease-in .3s;
