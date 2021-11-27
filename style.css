@@ -87,14 +87,7 @@ h2{
     overflow: hidden;
 }
 
-.history_text {
-    color: whitesmoke;
-    text-align: center;
-    margin: 20px auto;
-    width: 60%;
-    font-size: 25px;
-    font-family: 'Oswald', sans-serif;
-} 
+
 
 
 @font-face {
@@ -111,8 +104,87 @@ h2{
 
 /* histroy.html css */
 
-.history{
-    margin-top: 30px;
+.beginnings{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    background:rgb(26, 33, 36);
+    width: 95%;
+}
+
+.beginnings_text{
+    margin-bottom: 3%;
+    margin-left: 75px;
+    max-width: 50%;
+    max-height: fit-content;
+}
+
+.beginnings_text p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.beginnings_slider{
+    float: right;
+    position: relative;
+    width: 35%;
+    overflow: hidden;
+    margin-right: 75px;
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+.beginnings_images{
+    display: flex;
+    width: 100%;
+}
+
+.beginnings_images img{
+    width: 100%;
+    transition: all .15s ease;
+    border-radius: 5px;
+}
+
+.beginnings_images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid whitesmoke 3px;
+    cursor: pointer;
+    transition: all .15s ease;
+     margin: 5px;
+}
+
+.dots label:hover{
+    background: whitesmoke;
+}
+
+#img1:checked ~ .beginnings_m1{
+    margin-left: 0;
+}
+
+#img2:checked ~ .beginnings_m2{
+    margin-left: -100%;
+}
+
+#img3:checked ~ .beginnings_m3{
+    margin-left: -200%;
 }
 
 table{
@@ -379,7 +451,7 @@ td{
     font-family: 'Oswald';
     font-size: 30px;
     color: whitesmoke;
-    text-align: center;
+    text-align: center; 
     display: none;
 }
 
