@@ -518,7 +518,7 @@ td{
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-  }
+}
   
 @-moz-keyframes fadeIn {
     0% {opacity:0;}
@@ -545,7 +545,6 @@ td{
     font-family: 'Oswald', sans-serif;
     margin: 0;
 }
-
 
 .gallery-lightbox{
     position: fixed;
@@ -625,7 +624,7 @@ td{
 @keyframes fadeIn2 {
     0% {opacity:0;}
     100% {opacity:1;}
-  }
+}
   
 @-moz-keyframes fadeIn2 {
     0% {opacity:0;}
@@ -672,7 +671,6 @@ td{
 .pilots_text p{
     margin: 0 24px;
 }
-
 
 .pilots_div div:hover .pilots_text{
     transition: all ease-in .3s;
