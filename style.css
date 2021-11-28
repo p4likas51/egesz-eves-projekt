@@ -253,6 +253,27 @@ margin-left: -100%;
     margin-left: -200%;
 }
 
+.results_text li{
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.results_list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin: 0;
+}
+
+.results_text span{
+    font-size: 23px;
+}
+
+.ul_right{
+    float: right;
+}
+
 .results_dots{
     display: flex;
     justify-content: center;
@@ -285,9 +306,13 @@ margin-left: -100%;
     margin-left: -200%;
 }
 
+.table{
+    margin-top: 100px;
+}
+
 table{
     border-radius: 5px;
-    margin: 20px auto;
+    margin: 40px auto;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     color: whitesmoke;
