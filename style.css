@@ -87,9 +87,6 @@ h2{
     overflow: hidden;
 }
 
-
-
-
 @font-face {
     font-family: FerroRosso;
     src: url(fonts/FerroRosso.ttf);
@@ -104,7 +101,7 @@ h2{
 
 /* histroy.html css */
 
-.beginnings{
+.beginnings, .results{
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -116,21 +113,21 @@ h2{
     width: 95%;
 }
 
-.beginnings_text{
+.beginnings_text, .results_text{
     margin-bottom: 3%;
     margin-left: 75px;
     max-width: 50%;
     max-height: fit-content;
 }
 
-.beginnings_text p{
+.beginnings_text p, .results_text p{
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     color: whitesmoke;
     text-align: justify;
 }
 
-.beginnings_slider{
+.beginnings_slider, .results_slider{
     float: right;
     position: relative;
     width: 35%;
@@ -140,28 +137,28 @@ h2{
     max-width: 50%;
 }
 
-.beginnings_images{
+.images{
     display: flex;
     width: 100%;
 }
 
-.beginnings_images img{
+.images img{
     width: 100%;
     transition: all .15s ease;
     border-radius: 5px;
 }
 
-.beginnings_images input{
+.images input{
     display: none;
 }
 
-.dots{
+.beginnings_dots{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-.dots label{
+.beginnings_dots label{
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -171,7 +168,7 @@ h2{
      margin: 5px;
 }
 
-.dots label:hover{
+.beginnings_dots label:hover{
     background: whitesmoke;
 }
 
@@ -187,8 +184,109 @@ h2{
     margin-left: -200%;
 }
 
+.era{
+    
+    margin: 100px auto;
+    padding: 0;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    background:rgb(26, 33, 36);
+    width: 95%;
+}
+
+.era_slider{
+    float: right;
+    position: relative;
+    width: 35%;
+    overflow: hidden;
+    margin-left: 75px;
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+.era_text{
+    margin-bottom: 3%;
+    margin-right: 75px;
+    max-width: 50%;
+    max-height: fit-content;
+}
+
+.era_text p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.era_dots{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.era_dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid whitesmoke 3px;
+    cursor: pointer;
+    transition: all .15s ease;
+     margin: 5px;
+}
+
+.era_dots label:hover{
+    background: whitesmoke;
+}
+
+#img4:checked ~ .era_m1{
+    margin-left: 0;
+}
+
+#img5:checked ~ .era_m2{
+margin-left: -100%;
+}
+
+#img6:checked ~ .era_m3{
+    margin-left: -200%;
+}
+
+.results_dots{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.results_dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid whitesmoke 3px;
+    cursor: pointer;
+    transition: all .15s ease;
+     margin: 5px;
+}
+
+.results_dots label:hover{
+    background: whitesmoke;
+}
+
+#img7:checked ~ .results_m1{
+    margin-left: 0;
+}
+
+#img8:checked ~ .results_m2{
+    margin-left: -100%;
+}
+
+#img9:checked ~ .results_m3{
+    margin-left: -200%;
+}
+
 table{
-    border-radius: 16px;
+    border-radius: 5px;
     margin: 20px auto;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -233,21 +331,22 @@ td{
 .gold{
     background-color: rgba(255, 217, 0, 0.774);
     padding: 7px 30px;
+    border-radius: 5px;
 }
 
 .silver{
     background-color: #c0c0c0;
     padding: 7px 30px;
+    border-radius: 5px;
 }
 
 .bronz{
     background-color: rgb(176, 141, 87);
     padding: 7px 30px;
-    
+    border-radius: 5px;
 }
 
 /* gallery.html css */
-
 
 .gallery_img_small{
     width: 100%;
@@ -492,5 +591,3 @@ td{
     transition: ease-in .3s;
     filter: brightness(35%);
 }
-
-
