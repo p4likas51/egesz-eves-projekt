@@ -99,18 +99,99 @@ h2{
     width: 100%;
 }
 
+.footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(26, 33, 36);
+}
+
+.videos{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(26, 33, 36);
+    padding-bottom: 40px;
+}
+
+.videos iframe{
+    border-radius: 5px;
+}
+
+.quiz{
+    float: right;
+}
+
+.shop{
+    width: 100%;
+    background: rgb(26, 33, 36);
+}
+
+.shop_main{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.shop_items{
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.shop_items a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    display: none;
+    padding: 15px;
+}
+
+.shop_items:hover a{
+    display: block;
+    animation: fadeIn linear .4s;
+    -webkit-animation: fadeIn linear .4s;
+    -moz-animation: fadeIn linear .4s;
+    -o-animation: fadeIn linear .4s;
+    -ms-animation: fadeIn linear .4s;
+}
+
+.shop_items a:hover {
+    color: whitesmoke;
+}
+
+.shop_items:hover img {
+    filter: brightness(35%);
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.shop img{
+    height: 300px;
+    border-radius: 5px;
+}
+
 /* histroy.html css */
 
 .beginnings, .results{
     margin: 0 auto;
     padding: 0;
     display: flex;
-    border-radius: 5px;
     justify-content: space-between;
     align-items: center;
     height: 500px;
     background:rgb(26, 33, 36);
-    width: 95%;
+    width: 100%;
 }
 
 .beginnings_text, .results_text{
@@ -189,12 +270,11 @@ h2{
     margin: 100px auto;
     padding: 0;
     display: flex;
-    border-radius: 5px;
     justify-content: space-between;
     align-items: center;
     height: 500px;
     background:rgb(26, 33, 36);
-    width: 95%;
+    width: 100%;
 }
 
 .era_slider{
@@ -411,7 +491,6 @@ td{
     text-decoration: none;
     display: none;
     padding: 35px;
-
 }
 
 .gallery_items:hover a{
